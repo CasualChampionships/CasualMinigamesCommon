@@ -1,7 +1,7 @@
 package net.casual.championships.common.item
 
 import eu.pb4.polymer.core.api.item.PolymerItem
-import net.casual.championships.util.Texts
+import net.casual.championships.common.util.CommonComponents
 import net.minecraft.ChatFormatting
 import net.minecraft.nbt.Tag
 import net.minecraft.network.chat.Component
@@ -50,7 +50,7 @@ abstract class HeadItem: BlockItem(Blocks.PLAYER_HEAD, Properties()), PolymerIte
 
     override fun appendHoverText(stack: ItemStack, level: Level?, tooltipComponents: MutableList<Component>, isAdvanced: TooltipFlag) {
         super.appendHoverText(stack, level, tooltipComponents, isAdvanced)
-        tooltipComponents.add(Texts.TOOLTIP_HEAD.withStyle(ChatFormatting.GRAY))
+        tooltipComponents.add(CommonComponents.HEAD_TOOLTIP_MESSAGE.withStyle(ChatFormatting.GRAY))
     }
 
     override fun getPolymerItem(itemStack: ItemStack, player: ServerPlayer?): Item {
@@ -59,7 +59,7 @@ abstract class HeadItem: BlockItem(Blocks.PLAYER_HEAD, Properties()), PolymerIte
 
     override fun getPolymerItemStack(itemStack: ItemStack, tooltipContext: TooltipFlag, player: ServerPlayer?): ItemStack {
         val out = super.getPolymerItemStack(itemStack, tooltipContext, player)
-        out.getOrCreateTag().put("SkullOwner", this.getSkullOwner(itemStack))
+        out.orCreateTag.put("SkullOwner", this.getSkullOwner(itemStack))
         return out
     }
 }

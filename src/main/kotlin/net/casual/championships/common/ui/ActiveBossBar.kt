@@ -1,4 +1,4 @@
-package net.casual.championships.common.gui
+package net.casual.championships.common.ui
 
 import net.casual.arcade.gui.bossbar.CustomBossBar
 import net.casual.arcade.minigame.Minigame

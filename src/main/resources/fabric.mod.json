@@ -21,7 +21,7 @@
     ]
   },
   "mixins": [
-
+    "casual_common.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.12",

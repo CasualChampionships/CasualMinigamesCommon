@@ -2,6 +2,7 @@ package net.casual.championships.common.item
 
 import eu.pb4.polymer.core.api.utils.PolymerUtils
 import net.casual.arcade.utils.HeadTextures
+import net.casual.arcade.utils.ItemUtils.isOf
 import net.minecraft.nbt.Tag
 import net.minecraft.network.chat.Component
 import net.minecraft.server.level.ServerPlayer
@@ -24,7 +25,7 @@ class PlayerHeadItem: HeadItem() {
     }
 
     override fun getName(stack: ItemStack): Component? {
-        if (stack.`is`(CasualCommonItems.PLAYER_HEAD) && stack.hasTag()) {
+        if (stack.isOf(CasualCommonItems.PLAYER_HEAD) && stack.hasTag()) {
             var string: String? = null
             val tag = stack.orCreateTag
             if (tag.contains("SkullOwner", Tag.TAG_STRING.toInt())) {

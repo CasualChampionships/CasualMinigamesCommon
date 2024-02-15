@@ -1,4 +1,4 @@
-package net.casual.championships.common.gui
+package net.casual.championships.common.ui
 
 import net.casual.arcade.gui.sidebar.SidebarComponent
 import net.casual.arcade.gui.sidebar.SidebarSupplier

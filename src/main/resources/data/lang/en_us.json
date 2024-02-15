@@ -5,6 +5,16 @@
   "casual.goodLuck": "Good Luck!",
   "casual.hostedBy": "Server Hosted by KiwiTech",
 
+  "casual.tags.teamglow": "Teamglowing has been %s",
+  "casual.tags.fullbright": "Fullbright has been %s",
+  "casual.toggle.enabled": "Enabled",
+  "casual.toggle.disabled": "Disabled",
+
+  "casual.gui.previous": "Previous",
+  "casual.gui.next": "Next",
+  "casual.gui.exit": "Exit",
+  "casual.gui.back": "Back",
+
   "casual.ready.question": "Are you ready?",
   "casual.ready.notReady": "%s is not ready!",
   "casual.ready.isReady": "%s is ready!",
@@ -12,6 +22,24 @@
   "casual.ready.alreadyReady": "You have already readied up!",
   "casual.ready.alreadyUnready": "You are already unreadied!",
   "casual.ready.allReady": "All teams are ready!",
+
+  "casual.team.teams": "Teams",
+  "casual.team.teammates": "Teammates",
+  "casual.team.added": "You have been added to team %s",
+
+  "casual.minesweeper.exit": "Exit",
+  "casual.minesweeper.desc.1": "Welcome to 9x9 Minesweeper",
+  "casual.minesweeper.desc.2": "Left click to reveal a tile",
+  "casual.minesweeper.desc.3": "Right click to reveal a flag",
+  "casual.minesweeper.desc.4": "There are a total of 12 mines",
+  "casual.minesweeper.flags": "Flags",
+  "casual.minesweeper.mine": "Mine",
+  "casual.minesweeper.flag": "Flag",
+  "casual.minesweeper.timer": "Time (seconds)",
+  "casual.minesweeper.playAgain": "Play Again",
+  "casual.minesweeper.won": "You won in %s seconds",
+  "casual.minesweeper.lost": "You lost :(",
+  "casual.minesweeper.record": "%s now holds the record beating Minesweeper in %s seconds",
 
   "casual.game.direction": "Direction",
   "casual.game.direction.north": "North",
@@ -22,12 +50,15 @@
   "casual.game.direction.southWest": "South West",
   "casual.game.direction.west": "West",
   "casual.game.direction.northWest": "North West",
+
   "casual.game.borderDistance": "Border Distance",
   "casual.game.borderRadius": "Border Radius",
+  "casual.game.insideBorder": "Travel %s to get to safety",
   "casual.game.grace.first": "The grace period will last %s minutes. Once it is over pvp will be enabled and the border will start moving!",
   "casual.game.grace.generic": "The grace period will end in %s minutes!",
   "casual.game.grace.over": "The grace period is now over!",
-  "casual.game.grace.won": "%s has won!",
+  "casual.game.eliminated": "%s has been ELIMINATED!",
+  "casual.game.won": "%s has won!",
 
   "casual.game.startingIn": "Starting In: %s",
   "casual.game.startingSoon": "Starting Soon",
@@ -35,5 +66,6 @@
   "casual.game.grace": "Grace: %s",
   "casual.game.glowing": "Glowing: %s",
 
-  "casual.item.goldenHead": "Golden Head"
+  "casual.item.goldenHead": "Golden Head",
+  "casual.item.head": "Eat Me!"
 }

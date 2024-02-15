@@ -38,6 +38,7 @@ dependencies {
     // modImplementation("xyz.nucleoid:fantasy:${property("fantasy_version")}")
     // modImplementation("com.github.senseiwells:ServerReplay:${property("server_replay_version")}")
 
+    modImplementation("net.fabricmc.fabric-api:fabric-api:${property("fabric_version")}")
     modImplementation("net.fabricmc:fabric-loader:${property("loader_version")}")
 }
 

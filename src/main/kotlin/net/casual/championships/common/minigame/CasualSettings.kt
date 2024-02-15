@@ -9,6 +9,9 @@ import net.casual.arcade.settings.display.DisplayableSettingsDefaults
 import net.casual.arcade.utils.ComponentUtils.literal
 import net.casual.arcade.utils.ItemUtils.named
 import net.casual.championships.common.item.MenuItem
+import net.casual.championships.common.util.CommonComponents
+import net.casual.championships.common.util.CommonComponents.DISABLED_MESSAGE
+import net.casual.championships.common.util.CommonComponents.ENABLED_MESSAGE
 import net.casual.championships.common.util.CommonScreens
 import net.minecraft.network.chat.Component
 import net.minecraft.world.item.ItemStack
@@ -25,7 +28,7 @@ open class CasualSettings(
         }
 
         override fun options(builder: DisplayableGameSettingBuilder<Boolean>, enabled: ItemStack, disabled: ItemStack) {
-            super.options(builder, MenuItem.TICK.named("Enabled"), MenuItem.CROSS.named("Disabled"))
+            super.options(builder, MenuItem.TICK.named(ENABLED_MESSAGE), MenuItem.CROSS.named(DISABLED_MESSAGE))
         }
     }
 }

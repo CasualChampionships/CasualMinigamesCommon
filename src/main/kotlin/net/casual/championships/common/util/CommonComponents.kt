@@ -19,15 +19,44 @@ object CommonComponents {
     val NO_MESSAGE by constant("casual.no")
     val GOOD_LUCK_MESSAGE by constant("casual.goodLuck")
 
+    val HOSTED_BY_MESSAGE by constant("casual.hostedBy")
+
+    val TOGGLE_TEAMGLOW = generate("casual.tags.teamglow")
+    val TOGGLE_FULLBRIGHT = generate("casual.tags.fullbright")
+
+    val ENABLED_MESSAGE by constant("casual.toggle.enabled")
+    val DISABLED_MESSAGE by constant("casual.toggle.disabled")
+
+    val PREVIOUS_MESSAGE by constant("casual.gui.previous")
+    val NEXT_MESSAGE by constant("casual.gui.next")
+    val EXIT_MESSAGE by constant("casual.gui.exit")
+    val BACK_MESSAGE by constant("casual.gui.back")
+
     val READY_QUERY_MESSAGE by constant("casual.ready.question")
     val NOT_READY_MESSAGE = generate("casual.ready.notReady")
     val IS_READY_MESSAGE = generate("casual.ready.isReady")
     val CANNOT_READY_MESSAGE by constant("casual.ready.notNow")
     val ALREADY_READY_MESSAGE by constant("casual.ready.alreadyReady")
     val ALREADY_UNREADY_MESSAGE by constant("casual.ready.alreadyUnready")
-    val ALL_READY_MESSAGE by constant("casual.read.allReady")
+    val ALL_READY_MESSAGE by constant("casual.ready.allReady")
 
-    val HOSTED_BY_MESSAGE by constant("casual.hostedBy")
+    val TEAMS_MESSAGE by constant("casual.team.teams")
+    val TEAMMATES_MESSAGE by constant("casual.team.teammates")
+    val ADDED_TO_TEAM_MESSAGE = generate("casual.team.added")
+
+    val MINESWEEPER_EXIT by constant("casual.minesweeper.exit")
+    val MINESWEEPER_DESC_1 by constant("casual.minesweeper.desc.1")
+    val MINESWEEPER_DESC_2 by constant("casual.minesweeper.desc.2")
+    val MINESWEEPER_DESC_3 by constant("casual.minesweeper.desc.3")
+    val MINESWEEPER_DESC_4 by constant("casual.minesweeper.desc.4")
+    val MINESWEEPER_FLAGS by constant("casual.minesweeper.flags")
+    val MINESWEEPER_MINE by constant("casual.minesweeper.mine")
+    val MINESWEEPER_FLAG by constant("casual.minesweeper.flag")
+    val MINESWEEPER_TIMER by constant("casual.minesweeper.timer")
+    val MINESWEEPER_PLAY_AGAIN by constant("casual.minesweeper.playAgain")
+    val MINESWEEPER_WON = generate("casual.minesweeper.won")
+    val MINESWEEPER_LOST by constant("casual.minesweeper.lost")
+    val MINESWEEPER_RECORD = generate("casual.minesweeper.record")
 
     val DIRECTION_MESSAGE by constant("casual.game.direction")
     val NORTH_MESSAGE by constant("casual.game.direction.north")
@@ -41,13 +70,15 @@ object CommonComponents {
 
     val BORDER_DISTANCE_MESSAGE by constant("casual.game.borderDistance")
     val BORDER_RADIUS_MESSAGE by constant("casual.game.borderRadius")
+    val INSIDE_BORDER_MESSAGE = generate("casual.game.insideBorder")
     val BORDER_INITIAL_GRACE_MESSAGE = generate("casual.game.grace.first")
     val BORDER_GENERIC_GRACE_MESSAGE = generate("casual.game.grace.generic")
     val BORDER_GRACE_OVER_MESSAGE by constant("casual.game.grace.over")
     val HAS_BEEN_ELIMINATED_MESSAGE = generate("casual.game.eliminated")
     val GAME_WON_MESSAGE = generate("casual.game.won")
 
-    val GOLDEN_HEAD by constant("casual.item.goldenHead")
+    val GOLDEN_HEAD_MESSAGE by constant("casual.item.goldenHead")
+    val HEAD_TOOLTIP_MESSAGE by constant("casual.item.head.tooltip")
 
     val STARTING_IN_MESSAGE = generate("casual.game.startingIn")
     val STARTING_SOON_MESSAGE by constant("casual.game.startingSoon")
