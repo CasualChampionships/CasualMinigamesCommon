@@ -1,0 +1,39 @@
+{
+  "casual.welcome": "Welcome to %s",
+  "casual.yes": "YES",
+  "casual.no": "NO",
+  "casual.goodLuck": "Good Luck!",
+  "casual.hostedBy": "Server Hosted by KiwiTech",
+
+  "casual.ready.question": "Are you ready?",
+  "casual.ready.notReady": "%s is not ready!",
+  "casual.ready.isReady": "%s is ready!",
+  "casual.ready.notNow": "You cannot ready now!",
+  "casual.ready.alreadyReady": "You have already readied up!",
+  "casual.ready.alreadyUnready": "You are already unreadied!",
+  "casual.ready.allReady": "All teams are ready!",
+
+  "casual.game.direction": "Direction",
+  "casual.game.direction.north": "North",
+  "casual.game.direction.northEast": "North East",
+  "casual.game.direction.east": "East",
+  "casual.game.direction.southEast": "South East",
+  "casual.game.direction.south": "South",
+  "casual.game.direction.southWest": "South West",
+  "casual.game.direction.west": "West",
+  "casual.game.direction.northWest": "North West",
+  "casual.game.borderDistance": "Border Distance",
+  "casual.game.borderRadius": "Border Radius",
+  "casual.game.grace.first": "The grace period will last %s minutes. Once it is over pvp will be enabled and the border will start moving!",
+  "casual.game.grace.generic": "The grace period will end in %s minutes!",
+  "casual.game.grace.over": "The grace period is now over!",
+  "casual.game.grace.won": "%s has won!",
+
+  "casual.game.startingIn": "Starting In: %s",
+  "casual.game.startingSoon": "Starting Soon",
+  "casual.game.timeElapsed": "Time Elapsed: %s",
+  "casual.game.grace": "Grace: %s",
+  "casual.game.glowing": "Glowing: %s",
+
+  "casual.item.goldenHead": "Golden Head"
+}
