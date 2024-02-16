@@ -19,7 +19,7 @@ class MenuItem private constructor(): Item(Properties()), ArcadeModelledItem {
     }
 
     companion object {
-        val MODELLER = ResourcePackItemModeller(MenuItem(), CasualCommonMod.COMMON_PACK_CREATOR)
+        val MODELLER = ResourcePackItemModeller(MenuItem(), CasualCommonItems.CUSTOM_MODEL_PACK.getCreator())
         val TICK by MODELLER.model(CasualCommonMod.id("gui/green_tick"))
         val CROSS by MODELLER.model(CasualCommonMod.id("gui/red_cross"))
         val NEXT by MODELLER.model(CasualCommonMod.id("gui/green_right_arrow"))

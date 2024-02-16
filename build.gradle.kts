@@ -25,6 +25,18 @@ repositories {
     mavenCentral()
 }
 
+sourceSets {
+    val datagen by creating {
+        compileClasspath += main.get().compileClasspath
+        runtimeClasspath += main.get().runtimeClasspath
+        compileClasspath += main.get().output
+    }
+}
+
+loom {
+    createRemapConfigurations(sourceSets["datagen"])
+}
+
 dependencies {
     minecraft("com.mojang:minecraft:${property("minecraft_version")}")
     mappings(loom.layered {
@@ -40,6 +52,27 @@ dependencies {
 
     modImplementation("net.fabricmc.fabric-api:fabric-api:${property("fabric_version")}")
     modImplementation("net.fabricmc:fabric-loader:${property("loader_version")}")
+    modImplementation("net.fabricmc:fabric-language-kotlin:${property("fabric_kotlin_version")}")
+
+    "modDatagenImplementation"("com.github.CasualChampionships:arcade-datagen:1.0.3")
+    "modDatagenImplementation"("org.apache.commons:commons-text:1.11.0")
+}
+
+loom {
+    mods {
+        create("datagen") {
+            sourceSet(sourceSets["datagen"])
+        }
+    }
+
+    runs {
+        create("datagenClient") {
+            client()
+            name = "Test Mod Client"
+            runDir = "run-datagen"
+            setSource(sourceSets["datagen"])
+        }
+    }
 }
 
 tasks {

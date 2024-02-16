@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "id": "casual",
+  "id": "casual_common",
   "version": "${version}",
-  "name": "Casual Championships Mod",
-  "description": "Minigames for Casual Championships",
+  "name": "CasualCommon",
+  "description": "This mod provides common utilities and resources used in all the CasualChampionship minigames.",
   "authors": [
     "Sensei"
   ],
   "contact": {
-    "repo": "https://github.com/CasualUHC/uhc-mod.git"
+    "repo": "https://github.com/CasualChampionships/CasualMinigamesCommon"
   },
   "license": "MIT",
   "environment": "*",
@@ -16,7 +16,7 @@
     "server": [
       {
         "adapter": "kotlin",
-        "value": "net.casual.championships.CasualMod"
+        "value": "net.casual.championships.common.CasualCommonMod"
       }
     ]
   },

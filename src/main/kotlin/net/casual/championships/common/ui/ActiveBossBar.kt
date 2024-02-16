@@ -19,7 +19,7 @@ class ActiveBossBar(
     override fun getTitle(player: ServerPlayer): Component {
         val start = Component.empty()
             .append(ComponentUtils.space(-2))
-            .append(CommonComponents.BACKGROUND_120_BITMAP.shadowless())
+            .append(CommonComponents.BACKGROUND_40_BITMAP.shadowless())
             .append(ComponentUtils.space(-27))
             .append("%02d".format(this.owner.getPlayingPlayers().size).literal())
             .append(CommonComponents.PLAYER_COUNT_BITMAP)
@@ -27,7 +27,7 @@ class ActiveBossBar(
             .append(ComponentUtils.space(1, 2))
         val end = Component.empty()
             .append(ComponentUtils.space(39))
-            .append(CommonComponents.BACKGROUND_120_BITMAP.shadowless())
+            .append(CommonComponents.BACKGROUND_40_BITMAP.shadowless())
             .append(ComponentUtils.space(-27))
             .append("%02d".format(this.owner.stats.getOrCreateStat(player, ArcadeStats.KILLS).value).literal())
             .append(CommonComponents.KILLS_COUNT_BITMAP)

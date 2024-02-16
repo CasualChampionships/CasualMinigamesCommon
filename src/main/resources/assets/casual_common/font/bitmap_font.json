@@ -1,6 +1,5 @@
 {
   "providers": [
-
     {
       "type": "bitmap",
       "file": "casual_common:font/backgrounds/background240.png",

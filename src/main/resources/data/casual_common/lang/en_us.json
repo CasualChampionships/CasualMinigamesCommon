@@ -67,5 +67,24 @@
   "casual.game.glowing": "Glowing: %s",
 
   "casual.item.goldenHead": "Golden Head",
-  "casual.item.head": "Eat Me!"
+  "casual.item.head": "Eat Me!",
+
+  "casual.game.startingIn.space.1": "\uDAFF\uDFD8",
+  "casual.game.startingIn.space.2": "\uDAFF\uDF74",
+  "casual.game.timeElapsed.space.1": "\uDAFF\uDFDC",
+  "casual.game.timeElapsed.space.2": "\uDAFF\uDF6F",
+  "casual.game.grace.space.1": "\uDAFF\uDFDB",
+  "casual.game.grace.space.2": "\uDAFF\uDF9D",
+  "casual.game.glowing.space.1": "\uDAFF\uDFDE",
+  "casual.game.glowing.space.2": "\uDAFF\uDF9B",
+  "casual.game.startingSoon.space.1": "\uDAFF\uDFC8",
+  "casual.game.startingSoon.space.2": "\uDAFF\uDF84",
+  "casual.game.direction.north.negativeWidth": "\uDAFF\uDFE4",
+  "casual.game.direction.northEast.negativeWidth": "\uDAFF\uDFCA",
+  "casual.game.direction.east.negativeWidth": "\uDAFF\uDFEA",
+  "casual.game.direction.southEast.negativeWidth": "\uDAFF\uDFCA",
+  "casual.game.direction.south.negativeWidth": "\uDAFF\uDFE4",
+  "casual.game.direction.southWest.negativeWidth": "\uDAFF\uDFCA",
+  "casual.game.direction.west.negativeWidth": "\uDAFF\uDFEA",
+  "casual.game.direction.northWest.negativeWidth": "\uDAFF\uDFCA"
 }

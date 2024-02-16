@@ -14,7 +14,7 @@ import kotlin.reflect.KProperty
 object CommonComponents {
     val CASUAL_IMAGE_FONT = CasualCommonMod.id("bitmap_font")
 
-    val WELCOME_MESSAGE by constant("casual.welcome")
+    val WELCOME_MESSAGE = generate("casual.welcome")
     val YES_MESSAGE by constant("casual.yes")
     val NO_MESSAGE by constant("casual.no")
     val GOOD_LUCK_MESSAGE by constant("casual.goodLuck")
@@ -123,9 +123,9 @@ object CommonComponents {
         val key = ComponentUtils.getTranslationKeyOf(component)
         return ComponentGenerator {
             Component.empty().apply {
-                append("$key.space.1").withSpacesFont()
+                append(Component.translatable("$key.space.1").withSpacesFont())
                 append(background.shadowless())
-                append("$key.space.2")
+                append(Component.translatable("$key.space.2").withSpacesFont())
                 append(Component.translatable(key, *it))
             }
         }
