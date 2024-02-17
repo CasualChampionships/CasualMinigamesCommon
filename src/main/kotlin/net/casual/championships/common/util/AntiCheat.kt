@@ -15,6 +15,7 @@ import net.minecraft.core.Direction
 import net.minecraft.network.chat.Component
 import net.minecraft.server.level.ServerLevel
 import net.minecraft.server.level.ServerPlayer
+import net.minecraft.tags.BlockTags
 import net.minecraft.world.item.PlaceOnWaterBlockItem
 import net.minecraft.world.item.context.BlockPlaceContext
 import net.minecraft.world.level.block.state.BlockState
@@ -107,7 +108,7 @@ object AntiCheat {
     }
 
     private fun isSolidForPlacement(context: BlockPlaceContext, state: BlockState): Boolean {
-        if (state.canBeReplaced(context)) {
+        if (state.canBeReplaced(context) && !state.`is`(BlockTags.SLABS)) {
             val fluidsSolid = context.itemInHand.item is PlaceOnWaterBlockItem
             return fluidsSolid && state.fluidState.isSource
         }
