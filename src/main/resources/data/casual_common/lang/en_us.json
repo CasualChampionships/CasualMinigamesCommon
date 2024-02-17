@@ -14,6 +14,8 @@
   "casual.gui.next": "Next",
   "casual.gui.exit": "Exit",
   "casual.gui.back": "Back",
+  "casual.gui.spectator.title": "Spectator Screen",
+
 
   "casual.ready.question": "Are you ready?",
   "casual.ready.notReady": "%s is not ready!",
@@ -26,6 +28,11 @@
   "casual.team.teams": "Teams",
   "casual.team.teammates": "Teammates",
   "casual.team.added": "You have been added to team %s",
+
+  "casual.team.noTeam": "You are not on a team!",
+  "casual.spectator.notSpectating": "You are not spectating!",
+
+  "casual.position.broadcast": "My position is %s",
 
   "casual.minesweeper.exit": "Exit",
   "casual.minesweeper.desc.1": "Welcome to 9x9 Minesweeper",

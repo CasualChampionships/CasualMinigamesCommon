@@ -1,6 +1,8 @@
 package net.casual.championships.common.util
 
 import net.casual.arcade.utils.ComponentUtils
+import net.casual.arcade.utils.ComponentUtils.crimson
+import net.casual.arcade.utils.ComponentUtils.lime
 import net.casual.arcade.utils.ComponentUtils.shadowless
 import net.casual.arcade.utils.ComponentUtils.withFont
 import net.casual.arcade.utils.ComponentUtils.withSpacesFont
@@ -24,13 +26,14 @@ object CommonComponents {
     val TOGGLE_TEAMGLOW = generate("casual.tags.teamglow")
     val TOGGLE_FULLBRIGHT = generate("casual.tags.fullbright")
 
-    val ENABLED_MESSAGE by constant("casual.toggle.enabled")
-    val DISABLED_MESSAGE by constant("casual.toggle.disabled")
+    val ENABLED_MESSAGE by constant("casual.toggle.enabled") { lime() }
+    val DISABLED_MESSAGE by constant("casual.toggle.disabled") { crimson() }
 
     val PREVIOUS_MESSAGE by constant("casual.gui.previous")
     val NEXT_MESSAGE by constant("casual.gui.next")
     val EXIT_MESSAGE by constant("casual.gui.exit")
     val BACK_MESSAGE by constant("casual.gui.back")
+    val SPECTATOR_TITLE_MESSAGE by constant("casual.gui.spectator.title")
 
     val READY_QUERY_MESSAGE by constant("casual.ready.question")
     val NOT_READY_MESSAGE = generate("casual.ready.notReady")
@@ -43,6 +46,11 @@ object CommonComponents {
     val TEAMS_MESSAGE by constant("casual.team.teams")
     val TEAMMATES_MESSAGE by constant("casual.team.teammates")
     val ADDED_TO_TEAM_MESSAGE = generate("casual.team.added")
+
+    val NO_TEAM by constant("casual.team.noTeam")
+    val NOT_SPECTATING_MESSAGE by constant("casual.spectator.notSpectating")
+
+    val BROADCAST_POSITION_MESSAGE = generate("casual.position.broadcast")
 
     val MINESWEEPER_EXIT by constant("casual.minesweeper.exit")
     val MINESWEEPER_DESC_1 by constant("casual.minesweeper.desc.1")

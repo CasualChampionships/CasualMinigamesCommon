@@ -3,6 +3,7 @@ package net.casual.championships.common.ui
 import it.unimi.dsi.fastutil.ints.IntArraySet
 import it.unimi.dsi.fastutil.ints.IntSet
 import net.casual.arcade.gui.screen.ArcadeGenericScreen
+import net.casual.arcade.gui.screen.FrozenUsableScreen
 import net.casual.arcade.utils.ItemUtils.named
 import net.casual.arcade.utils.MinigameUtils.getMinigame
 import net.casual.arcade.utils.PlayerUtils
@@ -28,7 +29,7 @@ import kotlin.math.floor
 class MinesweeperScreen(
     player: Player,
     syncId: Int
-): ArcadeGenericScreen(player, syncId, 6) {
+): ArcadeGenericScreen(player, syncId, 6), FrozenUsableScreen {
     private val guessed = IntArraySet()
     private val flags = IntArraySet()
     private val grid = Grid(9, 9)
@@ -51,6 +52,10 @@ class MinesweeperScreen(
         this.slots[87].set(this.clockItem)
         this.slots[88].set(BLANK_TILE)
         this.slots[89].set(PLAY_AGAIN_TILE)
+    }
+
+    override fun isFrozenUsable(player: ServerPlayer): Boolean {
+        return true
     }
 
     override fun onTick(server: MinecraftServer) {
