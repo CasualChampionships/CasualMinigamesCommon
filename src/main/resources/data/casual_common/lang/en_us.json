@@ -74,7 +74,7 @@
   "casual.game.glowing": "Glowing: %s",
 
   "casual.item.goldenHead": "Golden Head",
-  "casual.item.head": "Eat Me!",
+  "casual.item.head.tooltip": "Eat Me!",
 
   "casual.game.startingIn.space.1": "\uDAFF\uDFD8",
   "casual.game.startingIn.space.2": "\uDAFF\uDF74",

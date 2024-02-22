@@ -10,10 +10,10 @@ import net.minecraft.world.BossEvent
 class LobbyBossBar: TimerBossBar() {
     override fun getTitle(player: ServerPlayer): Component {
         if (this.complete || !this.hasDuration) {
-            return CommonComponents.STARTING_SOON_MESSAGE
+            return CommonComponents.STARTING_SOON_BACKGROUNDED.generate()
         }
         val time = this.getRemainingDuration().formatHHMMSS()
-        return CommonComponents.STARTING_IN_MESSAGE.generate(time)
+        return CommonComponents.STARTING_IN_BACKGROUNDED.generate(time)
     }
 
     override fun getColour(player: ServerPlayer): BossEvent.BossBarColor {
